@@ -1,16 +1,85 @@
-<main class="mt-5">
-    <div class="container">
-        <div class="card mx-auto" style="width:600px;">
-            <div class="card-header">
-                <img src="/img/logo.png" alt="logo" class="card-img-top mx-auto m-2 rounded-circle" 
-                style="width: 150px; height: 150px;display:block;">
-                <h3 class="text-uppercase text-center p-4"> CRUD Node JS y MySQL</h3>
+<body>
+    <!-- Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/img/Banner1.jpg" class="d-block w-100 custom-carousel-item " alt="Slide 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-uppercase">Productos</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis</p>
+                </div>
             </div>
+            <div class="carousel-item">
+                <img src="/img/Banner2.jpg" class="d-block w-100 custom-carousel-item" alt="Slide 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-uppercase">Experiencias</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="/img/Banner3.jpg" class="d-block w-100 custom-carousel-item" alt="Slide 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5 class="text-uppercase">PQRS</h5>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
 
-            <div class="card-body text-center">
-                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit unde ea optio repellat dignissimos, reiciendis incidunt delectus, provident molestias harum iste voluptatibus necessitatibus. Facere voluptate quae numquam, autem inventore veniam! </p>
-                <a href="" class="btn btn-primary"> Crear una persona </a>
+    <!-- Productos destacados -->
+<div class="container my-5">
+    <h2 class="text-center mb-4">Productos destacados</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+            <div class="card h-100">
+                <img src="/img/Articulo1.jpg" class="card-img-top" alt="Producto 1" style="width: 100%; height: 300px;">
+                <div class="card-body">
+                    <h5 class="card-title">Producto 1</h5>
+                    <p class="card-text">Descripción breve del producto 1.</p>
+                    <a href="#" class="btn btn-primary">Ver detalles</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="/img/Articulo2.jpg" class="card-img-top" alt="Producto 2" style="width: 100%; height: 300px;">
+                <div class="card-body">
+                    <h5 class="card-title">Producto 2</h5>
+                    <p class="card-text">Descripción breve del producto 2.</p>
+                    <a href="#" class="btn btn-primary">Ver detalles</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100">
+                <img src="/img/Articulo3.jpg" class="card-img-top" alt="Producto 3" style="width: 100%; height: 300px;">
+                <div class="card-body">
+                    <h5 class="card-title">Producto 3</h5>
+                    <p class="card-text">Descripción breve del producto 3.</p>
+                    <a href="#" class="btn btn-primary">Ver detalles</a>
+                </div>
             </div>
         </div>
     </div>
-</main>
+</div>
+
+</body>
+

@@ -6,6 +6,9 @@ import {join, dirname} from 'path'
 import {fileURLToPath} from 'url'
 import {engine} from 'express-handlebars'
 
+import quienesSomosRoutes from './routes/quinesSomos.routes.js'
+
+
 
 /* ----------------------------- Initializacion ----------------------------- */
 const app = express();
@@ -32,6 +35,7 @@ app.get('/', (req, res) => {
     res.render('index')
 });
 
+app.use(quienesSomosRoutes);
 
 /* ------------------------------ Public Files ------------------------------ */
 app.use(express.static(join(__dirname, 'public') ));
