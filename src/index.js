@@ -7,6 +7,7 @@ import {fileURLToPath} from 'url'
 import {engine} from 'express-handlebars'
 
 import quienesSomosRoutes from './routes/quinesSomos.routes.js'
+import productosRoutes from './routes/productos.routes.js'
 
 
 
@@ -36,6 +37,7 @@ app.get('/', (req, res) => {
 });
 
 app.use(quienesSomosRoutes);
+app.use(productosRoutes);
 
 /* ------------------------------ Public Files ------------------------------ */
 app.use(express.static(join(__dirname, 'public') ));

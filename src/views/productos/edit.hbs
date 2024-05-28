@@ -1,0 +1,45 @@
+<div class="container p-4">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card text-center">
+                <div class="card-header">
+                    <h3 class="text-uppercase"> Editar un producto </h3>
+                </div>
+                <div class="card-body">
+                    <form action="/edit/{{producto.id}}" method="post" enctype="multipart/form-data">
+
+                        <div class="input-group mt-2">
+                            <label for="firstname" class="input-group-text">Nombre Producto</label>
+                            <input class="form-control" type="text" name="nombreProducto" id="nombreProducto" placeholder="Ejemplo: Juan Felipe" value="{{producto.nombreProducto}}" autofocus required>
+                        </div>
+
+                        <div class="input-group mt-2">
+                            <label for="lastname" class="input-group-text">Descripcion Producto</label>
+                            <input class="form-control" type="text" name="descProducto" id="descProducto" placeholder="Ejemplo: Sanchez Camacho" value="{{producto.descProducto}}" autofocus required>
+                        </div>
+
+                        <div class="input-group mt-2">
+                            <label for="age" class="input-group-text">Precio Producto</label>
+                            <input class="form-control" type="number" name="precioProducto" id="precioProducto" placeholder="Ejemplo: 18" value="{{producto.precioProducto}}" autofocus required>
+                        </div>
+
+                        <div class="input-group mt-2">
+                            <input class="form-control" type="file" name="file" id="file">
+                        </div>
+
+                        {{#if producto.imagenes}}
+                            <div class="input-group mt-2">
+                                <img src="/uploads/{{producto.imagenes}}" class="card-img-top mx-auto m-2 rounded-circle" style="width: 150px; height: 150px;display:block;">
+                            </div>
+                        {{/if}}
+
+                        <div class="for-group mt-4 d-grid gap-2">
+                            <button class="btn btn-success">Editar</button>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
